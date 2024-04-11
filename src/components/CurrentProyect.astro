@@ -1,22 +1,139 @@
-
-
-<div class=" flex w-full rounded-lg mt-5 md:mt-16 lg:mt-24  justify-center mb-2">
-  <h1 class=" font-extrabold text-3xl md:text-6xl lg:text-7xl mr-3">Con todo y evidencias</h1>
+<div class="flex w-full rounded-lg mt-5 md:mt-16 lg:mt-24 justify-center mb-2">
+  <h1 class="font-extrabold text-3xl md:text-6xl lg:text-7xl mr-3">
+    Con todo y evidencias
+  </h1>
 </div>
 
 <article class="flex justify-between">
-
-  <div class=" flex w-[160px] md:w-[330px] lg:w-[540px] flex-col text-pretty text-xs md:text-xl mt-2 md:mt-3 lg:mt-14  ">
-    <p class=""><span class=" font-bold text-x md:text-xl">Mi mas reciente proyecto es el rediseño de la pagina web de mi actual trabajo</span>, un restaurante argentino con gran trayectria aqui en la ciudad de Gdl.
-    
+  <div
+    class="flex w-[160px] md:w-[390px] lg:w-[540px] flex-col text-pretty text-xs md:text-xl mt-2 md:mt-10 lg:mt-24"
+  >
+    <p class="">
+      <span class="font-bold text-x md:text-xl"
+        >Mi mas reciente proyecto es el rediseño de la pagina web de mi actual
+        trabajo</span
+      >, un restaurante argentino con gran trayectria aqui en la ciudad de Gdl.
     </p>
-    <p class="w-[325px] lg:w-[540px] mt-1 ">Este proyecto es <span class="font-bold text-xs md:text-xl">para practicar y poner aprueba mis conocimientos</span>, a los dueños le intereso lo que estoy estudiando  y estan a la espera de ver mis resultados para adoptrala como su pagina oficial.</p>
+    <p class="w-[175px] md:w-[390px] lg:w-[540px] mt-1">
+      Este proyecto es <span class="font-bold text-xs md:text-xl"
+        >para practicar y poner aprueba mis conocimientos</span
+      >, a los dueños le intereso lo que estoy estudiando y estan a la espera de
+      ver mis resultados para adoptrala como su pagina oficial.
+    </p>
   </div>
+
   <!-- aqui va el carrusel  -->
-  <div class=" flex justify-end mr-3 mt-1 md:mt-5">
-  
-    <img src="/evidencias/evidencia.webp" class="  flex w-[170px] h-[100px] md:w-[450px] md:h-[260px] " alt="imagenes de proyectos, evidencias">
+
+  <div
+    id="carousel"
+    class="relative w-[170px] md:w-[380px] lg:w-[500px] mt-1 md:mt-10 bg-slate-50 md:h-64 rounded-lg"
+    data-carousel="slide"
+  >
+    <!-- Carousel wrapper -->
+    <div
+      class="relative h-full md:h-64 lg:h-72 overflow-hidden rounded-lg bg-slate-800"
+    >
+      <!-- Item 1 -->
+      <div class="duration-700 ease-in-out" data-carousel-item-1>
+        <a href="/public/evidencias/ideas.webp" target="_blank">
+          <img
+            src="/public/evidencias/ideas.webp"
+            class="absolute block object-cover h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt=" evidencias de mis proyectos"
+          />
+        </a>
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item-2>
+        <a href="/public/evidencias/idea2.webp" target="_blank">
+          <img
+            src="/public/evidencias/ideas.webp"
+            class="absolute block object-cover h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt=" evidencias de mis proyectos"
+          />
+        </a>
+      </div>
+    </div>
+    <!-- Slider indicators -->
+    <div
+      class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+    >
+      <button
+        type="button"
+        class="w-3 h-3 rounded-full bg-black/80"
+        aria-current="true"
+        aria-label="Slide 1"
+        data-carousel-slide-to="0"></button>
+      <button
+        type="button"
+        class="w-3 h-3 rounded-full bg-black/48"
+        aria-current="false"
+        aria-label="Slide 2"
+        data-carousel-slide-to="1"></button>
+      <button
+        type="button"
+        class="w-3 h-3 rounded-full bg-black/48"
+        aria-current="false"
+        aria-label="Slide 3"
+        data-carousel-slide-to="2"></button>
+      <button
+        type="button"
+        class="w-3 h-3 rounded-full bg-black/48"
+        aria-current="false"
+        aria-label="Slide 4"
+        data-carousel-slide-to="3"></button>
+    </div>
+    
+    <!-- Slider controls -->
+    <button
+      type="button"
+      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev
+    >
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/40 group-hover:bg-white/90"
+      >
+        <svg
+          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 1 1 5l4 4"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button
+      type="button"
+      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next
+    >
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/40 group-hover:bg-white/90"
+      >
+        <svg
+          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 9 4-4-4-4"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
   </div>
 </article>
-<!-- 
-// sin embargo lo que quieres es entrar al mundo de la programacion para rodearce de gente con la que pueda resolver dudas y tranjara junto con ellas que estudiar de forma autodidiacta se ha -->
