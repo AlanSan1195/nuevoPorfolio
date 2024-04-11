@@ -1,0 +1,119 @@
+---
+import Astroicon from "../components/icons/AstroIcon.astro";
+import Tailwindicon from "../components/icons/TailwindIcon.astro";
+import JavaScripticon from "../components/icons/JavaScriptIcon.astro";
+import Githubicon from "../components/icons/GitHubIcon.astro";
+import Wwwicon from "../components/icons/DemoIcon.astro";
+import LinkButton from "../components/icons/LinkButton.astro";
+import Demoicon from "../components/icons/DemoIcon.astro";
+// bgtaiwindbg- [#003159]/60
+
+const TAGS = {
+  ASTRO: {
+    name: "Astro",
+    class: " bg-secundary text-secundary solid border-2 border-gray-600 shadow-lg transition hover:scale-110  hover:bg-white/10",
+    icon: Astroicon,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    icon: Tailwindicon,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    icon: JavaScripticon,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "Clon Tesla- Landing page",
+    description:
+      " Con este proyecto aprendi a usar Astro y Tailwind, el clon de la pagina de Tesla tiene cosas muy interesantes como el background, las intersecciones en el scroll y claro una de las coasas mas interesantes es el header con efecto de transparencia.",
+    image: "/proyects/tesla.webp",
+    link: "",
+    github: "https://github.com/AlanSan1195/tesla-landing",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
+    demo: "",
+  },
+  {
+    title: "Arkanoid Game - Old School",
+    description:
+      "Este juego es el primero que desarrollo en mi vida y fue muy divertido hacerlo, junto con Midudev y su comunidad. Aprendí cosas interesantes como el uso del Canvas y el dibujo de los objetos con contextos, también el reinicio de frames y de página. Yo me llevo eso de este tipo de proyectos. Mi juego, por ahora, cuenta con un grado de dificultad interesante desde el principio. ¡Te reto a ROMPER 13 bloques!",
+    image: "/proyects/arkanoid.webp",
+    link: "",
+    github:
+      "https://github.com/AlanSan1195/JavaScript-Proyects/tree/main/01%20-arkanold-Game",
+    tags: [TAGS.JAVASCRIPT],
+    demo: "https://arkanoidsan.netlify.app/",
+  },
+];
+---
+
+  <div class=" mt-5 md:mt-12">
+    <h1 class=" font-extrabold text-5xl md:text-8xl lg:text-8xl flex mx-auto md:justify-center  ">Proyectos</h1>
+  </div>
+
+<div class="flex flex-col gap-y-12 w-[350px] md:w-[800px] lg:w-[1000px] mt-4 md:mt-10 lg:mt-14">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github, demo }) => (
+      <article class="flex flex-col space-x-0 space-y-2 group md:flex-row md:content-center md:items-center md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          
+          <h3 class="text-2xl md:text-3xl font-bol text-secundary font-semibold ">{title}</h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class="mt-2 text-secundary font-light text-xs text-pretty md:font-normal md:text-xl lg:text-2xl">
+              {description}
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <Githubicon class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Wwwicon class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+
+              {demo && (
+                <LinkButton href={demo}>
+                  <Demoicon class="size-6" />
+                  Demo
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>
