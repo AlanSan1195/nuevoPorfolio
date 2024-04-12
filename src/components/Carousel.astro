@@ -9,10 +9,10 @@
     >
       <!-- Item 1 -->
       <div class=" duration-700 ease-in-out" id="carousel-item-1">
-        <a href="/public/evidencias/ideas.webp" target="_blank">
+        <a href="/evidencias/ideas.webp" target="_blank">
           <img
             src="/public/evidencias/ideas.webp"
-            class=" duration-700 ease-in-out absolute  object-cover h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            class="absolute  object-cover block  h-full w-full "
             alt=" evidencias de mis proyectos"
             
           />
@@ -22,9 +22,9 @@
       <div class=" hidden duration-700 ease-in-out" id="carousel-item-2">
         <a href="/public/evidencias/ideas2.webp" target="_blank">
           <img
-            src="/public/evidencias/ideas2.webp"
-            class="absolute block object-cover h-full w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt=" evidencias de mis proyectos"
+            src="/evidencias/ideas2.webp"
+            class="absolute block object-cover h-full w-full "
+            alt=" evidencias de mis proyectos 2"
             
           />
         </a>
@@ -97,7 +97,7 @@
     let actualFoto = 0; // Inicia en el primer elemento
 
     // Función para mostrar el elemento actual y ocultar los demás
-    const showSlide = (index) => {
+    const showSlide = (index) => {   
       $carouselItems.forEach((item, i) => {
         if (i === index) {
           item.classList.remove("hidden");
