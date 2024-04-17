@@ -1,5 +1,7 @@
 ---
 import Carousel from "@/components/Carousel.astro";
+import GitHubIcon from "./icons/GitHubIcon.astro";
+import LinkButton from "./icons/LinkButton.astro";
 ---
 
 <div class="flex w-full rounded-lg mt-5 md:mt-16 lg:mt-24 justify-center mb-2">
@@ -10,10 +12,10 @@ import Carousel from "@/components/Carousel.astro";
 
 <article class="flex justify-between">
   <div
-    class="flex w-[160px] md:w-[390px] lg:w-[540px] flex-col text-pretty text-xs md:text-xl mt-2 md:mt-10 lg:mt-24"
+    class="flex w-[180px] md:w-[460px] lg:w-[540px] flex-col text text-xs md:text-xl mt-2 md:mt-10 lg:mt-20"
   >
     <p class="">
-      <span class="font-bold text-x md:text-xl"
+      <span class="font-bold text-xs md:text-xl"
         >Mi mas reciente proyecto es el rediseño de la pagina web de mi actual
         trabajo</span
       >, un restaurante argentino con gran trayectria aqui en la ciudad de Gdl.
@@ -24,8 +26,26 @@ import Carousel from "@/components/Carousel.astro";
       >, a los dueños le intereso lo que estoy estudiando y estan a la espera de
       ver mis resultados para adoptrala como su pagina oficial.
     </p>
+    <div class="hidden md:block mt-6 w-max md:ml-36 lg:ml-28">
+      <a
+      class="border-2 border-gray-600 rounded-full inline-flex w-[160px] lg:w-[280px] justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base transition hover:scale-110 hover:bg-white/10 shadow-lg hover:cursor-pointer"
+      href="https://github.com/AlanSan1195/matera-prototipe"
+      target="_blank"
+      >
+        <GitHubIcon class="size-3 md:size-5" /> Ver Proyecto
+      </a>
+    </div>
   </div>
 
-  <!-- aqui va el carrusel  -->
-
   <Carousel />
+</article>
+<!-- button para mobile -->
+<div class="mt-3 w-max md:ml-36 lg:ml-28 md:hidden">
+  <a
+    class="border-2 border-gray-600 rounded-full inline-flex w-[160px] lg:w-[280px] justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base transition hover:scale-110 hover:bg-white/10 shadow-lg hover:cursor-pointer"
+    href="https://github.com/AlanSan1195/matera-prototipe"
+    target="_blank"
+  >
+    <GitHubIcon class="size-3 md:size-5" /> Ver Proyecto
+  </a>
+</div>
