@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        pirate: ["Pirata One", "cursive"],
+        pirate: ["Pirata One",],
+        rocks:["Holtwood One SC"],
+        old:['IM Fell DW Pica SC'],
+        title:['Diplomata SC']
       },
       colors: {
         primary: "var(--color-primary)",
