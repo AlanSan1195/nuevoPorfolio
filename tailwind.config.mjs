@@ -7,7 +7,7 @@ export default {
         pirate: ["Pirata One",],
         rocks:["Holtwood One SC"],
         old:['IM Fell DW Pica SC'],
-        title:['Diplomata SC']
+        rdr:["chinese_rocks_rg", ],
       },
       colors: {
         primary: "var(--color-primary)",
