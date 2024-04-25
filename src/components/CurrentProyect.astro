@@ -3,50 +3,52 @@ import Carousel from "@/components/Carousel.astro";
 import GitHubIcon from "./icons/GitHubIcon.astro";
 ---
 
-
-
-<div class="flex  rounded-lg mt-5 md:mt-16 lg:mt-24  mb-2  md:w-full w-full">
-  <h1 class="font-rocks justify-center text-[21px] ml-5  md:text-6xl lg:text-6xl md:w-full flex ">
-    Con todo y evidencias
-  </h1>
-</div>
-
-<article class="flex justify-between text-md leading-none ">
-  <div
-    class="flex w-[180px] md:w-[560px] lg:w-[540px] flex-col  mt-2 md:mt-20 lg:mt-20"
-  >
-    <p class=" font-old md:text-2xl md:w-[530px] ">
-      <span class="font-old text-sm md:text-2xl font-bold leading-none"
-        >Mi mas reciente proyecto es el rediseño de la pagina web de mi actual
-        trabajo</span
-      >, un restaurante argentino con gran trayectria aqui en la ciudad de Gdl.
-    </p>
-    <p class=" font-old w-[175px] md:w-[530px] lg:w-[540px] mt-1 leading-none md:text-2xl   ">
-      Este proyecto es <span class="font-old text-sm md:text-2xl leading-none font-bold"
-        >para practicar y poner aprueba mis conocimientos</span
-      >, a los dueños le intereso lo que estoy estudiando y estan a la espera de
-      ver mis resultados para adoptrala como su pagina oficial.
-    </p>
-    <div class=" hidden md:block mt-6 w-max md:ml-36 lg:ml-28">
-      <a
-      class="border-2 border-gray-600 rounded-full inline-flex w-[160px] lg:w-[280px] justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base transition hover:scale-110 hover:bg-white/10 shadow-lg hover:cursor-pointer font-rocks"
+<section id="actual" class=" lg:w-[1040px]">
+  <div class="flex  rounded-lg mt-5 md:mt-16 lg:mt-8  mb-2  md:w-full w-full l">
+    <h1 class="font-rocks justify-center text-[21px] m-5  md:text-4xl lg:text-5xl md:w-full flex ">
+      Con todo y evidencias
+    </h1>
+  </div>
+  
+  <article class="flex justify-between text-md leading-none ">
+    <div
+      class="flex w-[180px] md:w-[560px] lg:w-[540px] flex-col  mt-2 md:mt-8 lg:mt-8 md:m-4"
+    >
+      <p class=" font-old md:text-2xl md:w-[480px] ">
+        <span class="font-old text-sm md:text-2xl font-bold leading-none"
+          >Mi mas reciente proyecto es el rediseño de la pagina web de mi actual
+          trabajo</span
+        >, un restaurante argentino con gran trayectria aqui en la ciudad de Gdl.
+      </p>
+      <p class=" font-old w-[175px] md:w-[530px] lg:w-[540px] mt-1 leading-none md:text-2xl   ">
+        Este proyecto es <span class="font-old text-sm md:text-2xl leading-none font-bold"
+          >para practicar y poner aprueba mis conocimientos</span
+        >, a los dueños le intereso lo que estoy estudiando y estan a la espera de
+        ver mis resultados para adoptrala como su pagina oficial.
+      </p>
+      <div class=" hidden md:block mt-6 w-max md:ml-36 lg:ml-28">
+        <a
+        class="border-2 border-gray-600 rounded-full inline-flex w-[160px] md:w-[280px] justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base transition hover:scale-110 hover:bg-white/10 shadow-lg hover:cursor-pointer font-rocks"
+        href="https://github.com/AlanSan1195/matera-prototipe"
+        target="_blank"
+        >
+          <GitHubIcon class="size-3 md:size-5" /> Ver Proyecto
+        </a>
+      </div>
+    </div>
+  
+    <Carousel  />
+  </article>
+  <!-- button para mobile -->
+  <div class="mt-5 w-max md:ml-36 lg:ml-20 md:hidden font-rocks text-xs ">
+    <a
+      class="border-2 border-gray-600 rounded-full inline-flex w-[180px] lg:w-[280px] justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base transition hover:scale-110 hover:bg-white/10 shadow-lg hover:cursor-pointer "
       href="https://github.com/AlanSan1195/matera-prototipe"
       target="_blank"
-      >
-        <GitHubIcon class="size-3 md:size-5" /> Ver Proyecto
-      </a>
-    </div>
+    >
+      <GitHubIcon class="size-3 md:size-5" /> Ver Proyecto
+    </a>
   </div>
 
-  <Carousel />
-</article>
-<!-- button para mobile -->
-<div class="mt-5 w-max md:ml-36 lg:ml-28 md:hidden font-rocks text-xs ">
-  <a
-    class="border-2 border-gray-600 rounded-full inline-flex w-[180px] lg:w-[280px] justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base transition hover:scale-110 hover:bg-white/10 shadow-lg hover:cursor-pointer"
-    href="https://github.com/AlanSan1195/matera-prototipe"
-    target="_blank"
-  >
-    <GitHubIcon class="size-3 md:size-5" /> Ver Proyecto
-  </a>
-</div>
+</section>
+
