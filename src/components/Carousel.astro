@@ -119,7 +119,7 @@
     let actualFoto = 0; // Inicia en el primer elemento
 
     // Función para mostrar el elemento actual y ocultar los demás
-    const showSlide = (index) => {   
+    const showSlide = (index: any) => {   
       $carouselItems.forEach((item, i) => {
         if (i === index) {
           item.classList.remove("hidden");
