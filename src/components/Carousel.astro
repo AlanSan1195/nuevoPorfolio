@@ -1,6 +1,10 @@
+---
+import Skills from "./Skills.astro";
+---
+
 <div
     id="carousel"
-    class="relative w-[170px] md:w-[380px] lg:w-[500px]  md:mt-3 bg-slate-50 md:h-64 rounded-lg md:mr-5"
+    class="relative w-[170px] md:w-[380px] lg:w-[500px]  md:mt-11 lg:mt-4 bg-slate-50 md:h-64 rounded-lg md:mr-5 "
     data-carousel="slide"
   >
     <!-- Carousel wrapper -->
@@ -103,8 +107,11 @@
         <span class="sr-only">Next</span>
       </span>
     </button>
+
+      <Skills />
+
   </div>
-</article>
+
 
 <script>
  document.addEventListener("DOMContentLoaded", function () {
