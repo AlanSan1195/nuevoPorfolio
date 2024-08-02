@@ -52,8 +52,8 @@ const PROJECTS = [
   // },
   {
     title: "Super Mrio Bros Game",
-    description:"El legendario primer nivel del Super Mario Bros con Phaser un motor de Javascrip para el desarrolo de Videojuegos, A diferencia de usar Canvas la experiencía de desarrollo con Phaser es magíca y crear vida de forma virtual, es algo que acaba de conocer, sus habilidades se pulen mas con este tipo de proyectos ya que es importate organizar bien el codio para desarrollar este tipo de locuras, sin duda esto es algo que nadie esperaba que aprendiera tan pronto y no hay duda de que lo disfruta; no descansará hasta concluir un par de niveles.",
-    image: "/proyects/superMarioBros.webp",
+    description:"El legendario primer nivel del Super Mario Bros con Phaser, un motor de JavaScript para el desarrollo de videojuegos. A diferencia de usar Canvas, la experiencia de desarrollo con Phaser es mágica y crear vida de forma virtual es algo que acabo de conocer. Mis habilidades se pulen más con este tipo de proyectos, ya que es importante organizar bien el código para desarrollar este tipo de locuras. Sin duda, esto es algo que nadie esperaba que aprendiera tan pronto y no hay duda de que lo disfruta; no descansará hasta concluir un par de niveles.",
+    image: "proyects/superMarioBros.webp",
     link: "",
     github: "https://github.com/AlanSan1195/JavaScript-Proyects/tree/main/02%20-mario-bors",
     tags: [TAGS.HTML, TAGS.JAVASCRIPT],
@@ -83,10 +83,10 @@ const PROJECTS = [
     PROJECTS.map(({ image, title, description, tags, link, github, demo }) => (
       <article class="flex flex-col space-x-0 space-y-2 group md:flex-row md:content-center md:items-center md:space-x-8 md:space-y-0 lg:ml-4">
         <div class="w-full md:w-1/2">
-          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+          <div class="relative flex  rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
               alt="imagen de mis proyectos"
-              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105 rounded-xl sm:rounded-xl"
               loading="lazy"
               src={image}
             />
