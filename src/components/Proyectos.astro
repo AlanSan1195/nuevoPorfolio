@@ -8,12 +8,14 @@ import LinkButton from "../components/icons/LinkButton.astro";
 import Demoicon from "../components/icons/DemoIcon.astro";
 import HtmlIcon from "../components/icons/htmlIcon.astro";
 import CssIcon from "../components/icons/CssIcon.astro";
+import ReactIcon from "./icons/ReactIcon.astro";
+
 // bgtaiwindbg- [#003159]/60
 
 const TAGS = {
   ASTRO: {
     name: "Astro",
-    class: " bg-secundary text-secundary solid border-2 border-gray-600 shadow-lg transition hover:scale-110  hover:bg-white/10",
+    class: " bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110  hover:bg-white/10",
     icon: Astroicon,
   },
   TAILWIND: {
@@ -35,42 +37,48 @@ const TAGS = {
     name: "CSS",
     class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
     icon: CssIcon,
+  },
+  REACT:{
+    name: "React",
+    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    icon: ReactIcon,
   }
 };
 
 const PROJECTS = [
-  // {
-  //   title: "La velada IV- Pre-Landing",
-  //   description:
-  //     "Con este proyecto práctico Astro y Tailwind. me parecio un gran ejerciocio hacer esta landing por que esta enfocada en la optimizacion en  imágenes, videos y SVG, además de la velocidad de carga. Me han gustado mucho los resultados y la facilidad de uso de Astro. Fue un buen ejercicio para adaptarme a mejores prácticas.",
-  //   image: "/proyects/mi-velada-landing.webp",
-  //   link: "",
-  //   github: "https://github.com/AlanSan1195/mi-velada-web",
-  //   tags: [TAGS.ASTRO, TAGS.TAILWIND],
-  //   demo: "",
-    
-  // },
+
   {
     title: "Super Mrio Bros Game",
-    description:"El legendario primer nivel del Super Mario Bros con Phaser, un motor de JavaScript para el desarrollo de videojuegos. A diferencia de usar Canvas, la experiencia de desarrollo con Phaser es mágica y crear vida de forma virtual es algo que acabo de conocer. Mis habilidades se pulen más con este tipo de proyectos, ya que es importante organizar bien el código para desarrollar este tipo de locuras. Sin duda, esto es algo que nadie esperaba que aprendiera tan pronto y no hay duda de que lo disfruta; no descansará hasta concluir un par de niveles.",
+    description:"El legendario primer nivel del Super Mario Bros con Phaser, un motor de JavaScript para el desarrollo de videojuegos. A diferencia de usar Canvas, la experiencia de desarrollo con Phaser es mágica y crear vida de forma virtual es algo que este hombre acaba de conocer. sus habilidades se pulen más con este tipo de proyectos,ya que es fundamental organizar bien el codigo para identificar cualquier problema mientras el mundo virtual va creciendo. Sin duda, esto es algo que nadie esperaba que aprendiera tan pronto y no hay duda de que lo disfruta; no descansará hasta concluir un par de niveles.",
     image: "proyects/superMarioBros.webp",
     link: "",
-    github: "https://github.com/AlanSan1195/JavaScript-Proyects/tree/main/02%20-mario-bors",
+    github: "https://github.com/AlanSan1195/JavaScript-Proyects",
     tags: [TAGS.HTML, TAGS.JAVASCRIPT],
     demo: "",
     
   },
   {
-    title: "Arkanoid Game - Old School",
+    title: "Wines Collections ",
     description:
-      "Uno de sus primeros desarrollos. Junto con Midudev y su comunidad, Aprendio cosas interesantes como el uso del Canvas y el dibujo de los objetos de forma manual. cositas como el reinicio de frames y la misma página. Su juego por ahora solo esta disponible en una demo excluciva para estudiar sus tecnicas,  brindar informacion a los que la necesiten y nos ayuden a su reclutamiento.",
-    image: "/proyects/arkanoid.webp",
+      "Con este proyecto aprendió a combinar sus tecnologías preferidas en un solo trabajo, como el uso de React dentro de Astro para simplificar la lógica de su código. También descubrió las colecciones que integra Astro en su versión más nueva para manejar colecciones a su gusto de forma tipada. Aunque parezca sencillo, tiene una estructura interesante por dentro y un gran diseño. probablemente este sea un mensaje para todos que nos indica que Alan siempre intenta estar al día para aumentar su experiencia.",
+    image: "/proyects/winesCollections.webp",
     link: "",
     github:
-      "https://github.com/AlanSan1195/JavaScript-Proyects/tree/main/01%20-arkanold-Game",
-    tags: [TAGS.JAVASCRIPT],
-    demo: "https://arkanoidsan.netlify.app/",
+      "https://github.com/AlanSan1195/wines-list",
+    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
+    demo: "https://cavamatera.online",
   },
+  // {
+  //   title: "Arkanoid Game - Old School",
+  //   description:
+  //     "Uno de sus primeros desarrollos. Junto con Midudev y su comunidad, Aprendio cosas interesantes como el uso del Canvas y el dibujo de los objetos de forma manual. cositas como el reinicio de frames y la misma página. Su juego por ahora solo esta disponible en una demo excluciva para estudiar sus tecnicas,  brindar informacion a los que la necesiten y nos ayuden a su reclutamiento.",
+  //   image: "/proyects/arkanoid.webp",
+  //   link: "",
+  //   github:
+  //     "https://github.com/AlanSan1195/JavaScript-Proyects/tree/main/01%20-arkanold-Game",
+  //   tags: [TAGS.JAVASCRIPT],
+  //   demo: "https://arkanoidsan.netlify.app/",
+  // },
 ];
 ---
 
