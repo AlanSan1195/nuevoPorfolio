@@ -50,7 +50,7 @@ const PROJECTS = [
   {
     title: "Super Mrio Bros Game",
     description:"El legendario primer nivel del Super Mario Bros con Phaser, un motor de JavaScript para el desarrollo de videojuegos. A diferencia de usar Canvas, la experiencia de desarrollo con Phaser es mágica y crear vida de forma virtual es algo que este hombre acaba de conocer. sus habilidades se pulen más con este tipo de proyectos,ya que es fundamental organizar bien el codigo para identificar cualquier problema mientras el mundo virtual va creciendo. Sin duda, esto es algo que nadie esperaba que aprendiera tan pronto y no hay duda de que lo disfruta; no descansará hasta concluir un par de niveles.",
-    image: "proyects/superMarioBros.webp",
+    image: "proyects/mario1.webp",
     link: "",
     github: "https://github.com/AlanSan1195/JavaScript-Proyects",
     tags: [TAGS.HTML, TAGS.JAVASCRIPT],
@@ -61,7 +61,7 @@ const PROJECTS = [
     title: "Wines Collections ",
     description:
       "Con este proyecto aprendió a combinar sus tecnologías preferidas en un solo trabajo, como el uso de React dentro de Astro para simplificar la lógica de su código. También descubrió las colecciones que integra Astro en su versión más nueva para manejar colecciones a su gusto de forma tipada. Aunque parezca sencillo, tiene una estructura interesante por dentro y un gran diseño. probablemente este sea un mensaje para todos que nos indica que Alan siempre intenta estar al día para aumentar su experiencia.",
-    image: "/proyects/winesCollections.webp",
+    image: "/proyects/winesProyect.webp",
     link: "",
     github:
       "https://github.com/AlanSan1195/wines-list",
@@ -82,23 +82,22 @@ const PROJECTS = [
 ];
 ---
 
-  <div class=" mt-14 md:mt-18 lg:mt-24">
-    <h1 class=" font-rdr text-5xl md:text-8xl lg:text-[100px] flex md:mx-auto ml-3 md:justify-center  ">Proyectos</h1>
+  <div class=" mt-14 md:mt-18 lg:mt-24 flex justify-center mr-3">
+    <h1 class=" font-rdr text-6xl md:text-8xl lg:text-[100px] flex md:mx-auto ml-3 md:justify-center text-grayText dark:text-secundary font-bold ">Proyectos</h1>
   </div>
 
-<div class="flex flex-col gap-y-12 w-[350px] md:w-[800px] lg:w-[1000px] mt-4 md:mt-10 lg:mt-14 md:mx-auto">
+<div class="flex flex-col gap-y-12 w-[350px] md:w-[800px] lg:w-[1000px] mt-4 md:mt-10 lg:mt-14 mx-auto">
   {
     PROJECTS.map(({ image, title, description, tags, link, github, demo }) => (
-      <article class="flex flex-col space-x-0 space-y-2 group md:flex-row md:content-center md:items-center md:space-x-8 md:space-y-0 lg:ml-4">
-        <div class="w-full md:w-1/2">
-          <div class="relative flex  rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+      <article class="flex flex-col space-y-2 group md:flex-row md:content-center md:items-center sm:mx-auto  md:space-y-0 ">
+        <div class="  ">
             <img
               alt="imagen de mis proyectos"
-              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105 rounded-xl sm:rounded-xl"
+              class=" w-full sm:h-full flex justify-center items-center content-normal"
               loading="lazy"
               src={image}
             />
-          </div>
+
         </div>
 
         <div class="w-full md:w-1/2 md:max-w-lg">
