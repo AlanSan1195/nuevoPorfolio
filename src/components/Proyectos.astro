@@ -10,52 +10,51 @@ import HtmlIcon from "../components/icons/htmlIcon.astro";
 import CssIcon from "../components/icons/CssIcon.astro";
 import ReactIcon from "./icons/ReactIcon.astro";
 
-// bgtaiwindbg- [#003159]/60
+// hice esta iteracion de tags para experimentar con los iconos
 
 const TAGS = {
   ASTRO: {
     name: "Astro",
-    class: " bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110  hover:bg-white/10",
+    class: "    text-red-800 ",
     icon: Astroicon,
   },
   TAILWIND: {
     name: "Tailwind",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class: " text-red-800",
     icon: Tailwindicon,
   },
   JAVASCRIPT: {
     name: "JavaScript",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class: " text-red-800",
     icon: JavaScripticon,
   },
   HTML: {
     name: "HTML",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class: " text-red-800",
     icon: HtmlIcon,
   },
-  CSS:{
+  CSS: {
     name: "CSS",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class: " text-red-800",
     icon: CssIcon,
   },
-  REACT:{
+  REACT: {
     name: "React",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class: " text-red-800",
     icon: ReactIcon,
-  }
+  },
 };
 
 const PROJECTS = [
-
   {
     title: "Super Mrio Bros Game",
-    description:"El legendario primer nivel del Super Mario Bros con Phaser, un motor de JavaScript para el desarrollo de videojuegos. A diferencia de usar Canvas, la experiencia de desarrollo con Phaser es mágica y crear vida de forma virtual es algo que este hombre acaba de conocer. sus habilidades se pulen más con este tipo de proyectos,ya que es fundamental organizar bien el codigo para identificar cualquier problema mientras el mundo virtual va creciendo. Sin duda, esto es algo que nadie esperaba que aprendiera tan pronto y no hay duda de que lo disfruta; no descansará hasta concluir un par de niveles.",
+    description:
+      "El legendario primer nivel del Super Mario Bros con Phaser, un motor de JavaScript para el desarrollo de videojuegos. A diferencia de usar Canvas, la experiencia de desarrollo con Phaser es mágica y crear vida de forma virtual es algo que este hombre acaba de conocer. sus habilidades se pulen más con este tipo de proyectos,ya que es fundamental organizar bien el codigo para identificar cualquier problema mientras el mundo virtual va creciendo. Sin duda, esto es algo que nadie esperaba que aprendiera tan pronto y no hay duda de que lo disfruta; no descansará hasta concluir un par de niveles.",
     image: "proyects/mario1.webp",
     link: "",
     github: "https://github.com/AlanSan1195/JavaScript-Proyects",
     tags: [TAGS.HTML, TAGS.JAVASCRIPT],
     demo: "https://alangamebros.netlify.app/",
-    
   },
   {
     title: "Wines Collections ",
@@ -63,8 +62,7 @@ const PROJECTS = [
       "Con este proyecto aprendió a combinar sus tecnologías preferidas en un solo trabajo, como el uso de React dentro de Astro para simplificar la lógica de su código. También descubrió las colecciones que integra Astro en su versión 5 para manejar colecciones a su gusto de forma tipada. Aunque parezca sencillo, tiene una estructura interesante por dentro y un gran diseño. probablemente este sea un mensaje para todos que nos indica que Alan siempre intenta estar al día para aumentar su experiencia.",
     image: "/proyects/winesProyect.webp",
     link: "",
-    github:
-      "https://github.com/AlanSan1195/wines-list",
+    github: "https://github.com/AlanSan1195/wines-list",
     tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
     demo: "https://cavamatera.online",
   },
@@ -82,62 +80,72 @@ const PROJECTS = [
 ];
 ---
 
-  <div class=" mt-14 md:mt-18 lg:mt-24 flex justify-center mr-3">
-    <h1 class=" font-rdr text-6xl md:text-8xl lg:text-[100px] flex md:mx-auto ml-3 md:justify-center text-grayText dark:text-secundary font-bold ">Proyectos</h1>
-  </div>
+<div class="mt-14 md:mt-18 lg:mt-24 flex justify-center mr-3 opacity-75">
+  <h1
+    class="font-rdr text-6xl md:text-8xl lg:text-[100px] flex md:mx-auto ml-3 md:justify-center text-secundary font-bold"
+  >
+    Proyectos
+  </h1>
+</div>
 
-<div class="flex flex-col gap-y-12 w-[350px] md:w-[800px] lg:w-[1000px] mt-4 md:mt-10 lg:mt-14 mx-auto">
+<div
+  class="flex flex-col gap-y-12  w-[350px] md:w-[800px] lg:w-[1000px] mt-4 md:mt-10 lg:mt-14 mx-auto"
+>
   {
     PROJECTS.map(({ image, title, description, tags, link, github, demo }) => (
-      <article class="flex flex-col space-y-2 group md:flex-row md:content-center md:items-center sm:mx-auto  md:space-y-0 ">
+      <article class="flex flex-col space-y-2 md:gap-x-4 group md:flex-row md:content-center md:items-center sm:mx-auto  md:space-y-0 text-pretty ">
         <div class="  ">
-            <img
-              alt="imagen de mis proyectos"
-              class=" w-full sm:h-full flex justify-center items-center content-normal"
-              loading="lazy"
-              src={image}
-            />
-
+          <img
+            alt="imagen de mis proyectos"
+            class=" w-full sm:h-full flex justify-center items-center content-normal speia-effect"
+            loading="lazy"
+            src={image}
+          />
         </div>
 
         <div class="w-full md:w-1/2 md:max-w-lg">
-          
-          <h3 class="text-xl md:text-3xl font-rocks text-secundary font-semibold ">{title}</h3>
+          <h3 class="text-xl md:text-3xl font-rocks text-secundary font-semibold  ">
+            {title}
+          </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="flex flex-row mb-2 gap-x-2 items-center ">
               {tags.map((tag) => (
-                <li>
+                <li class="">
                   <span
-                    class={`flex gap-x-2 rounded-full text-xs  font-rocks ${tag.class} py-1 px-2 `}
+                    class={`flex gap-x-2 rounded-full text-xs  font-rocks items-center ${tag.class} py-1 px-2 `}
                   >
-                    <tag.icon class="size-4" />
+                    <img
+                      class="size-10"
+                      src="/public/imagenes/revolver-logo.webp"
+                      alt="Revolver Logo"
+                    />
                     {tag.name}
                   </span>
                 </li>
               ))}
             </ul>
 
-            <div class="mt-2 text-secundary font-old text-lg leading-none text-pretty  md:text-xl lg:text-2xl">
+            <div class="mt-2 text-secundary font-old text-lg leading-none text-pretty  md:text-xl lg:text-2xl opacity-65">
               {description}
             </div>
-            <footer class="flex items-end justify-start mt-4 gap-x-4 font-rocks text-xs">
+            <footer class="flex items-end justify-start mt-4 gap-x-4 font-rocks text-xs text-secundary">
               {github && (
-                <LinkButton href={github} >
-                  <Githubicon class="size-6" />
-                  Code
+                <LinkButton href={github}>
+                  <Githubicon class="size-6 " />
+                  <p class="opacity-75">Code</p>
                 </LinkButton>
               )}
               {link && (
                 <LinkButton href={link}>
                   <Wwwicon class="size-4" />
-                  Preview
+                  <p class="opacity-75">Preview</p>
                 </LinkButton>
               )}
 
               {demo && (
                 <LinkButton href={demo}>
                   <Demoicon class="size-6" />
-                  Demo
+                  <p class="opacity-75">Demo</p>
                 </LinkButton>
               )}
             </footer>

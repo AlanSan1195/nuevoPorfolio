@@ -14,38 +14,59 @@ import TailwindIcon from "../components/icons/TailwindIcon.astro";
 const TAGS = {
   ASTRO: {
     name: "Astro",
-    class: " bg-secundary text-secundary solid border-2 border-gray-600 shadow-lg transition hover:scale-110  hover:bg-white/10",
+    class:
+      " bg-secundary text-secundary solid border-2 border-gray-600 shadow-lg transition hover:scale-110  hover:bg-white/10",
     icon: Astroicon,
   },
   TAILWIND: {
     name: "Tailwind",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class:
+      "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
     icon: Tailwindicon,
   },
   JAVASCRIPT: {
     name: "JavaScript",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class:
+      "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
     icon: JavaScripticon,
   },
   HTML: {
     name: "HTML",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class:
+      "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
     icon: HtmlIcon,
   },
-  CSS:{
+  CSS: {
     name: "CSS",
-    class: "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
+    class:
+      "bg-secundary text-secundary solid border-2 border-gray-600  transition hover:scale-110 hover:bg-white/10",
     icon: CssIcon,
-  }
+  },
 };
-
 ---
 
-
-
 <div class="hidden md:flex flex-wrap justify-center mt-8 ml-9">
-    <ul class=" flex flex-row gap-x-2  ">
-        <li class="bg-secundary text-secundary solid border-2 border-gray-600 shadow-lg transition hover:scale-110  hover:bg-white/10 rounded-full  flex flex-row items-center p-1 m-auto">  <AstroIcon class=" size-6"/> <p class=" font-bold font-rocks">Astro</p> </li>
-        <li class="bg-secundary text-secundary solid border-2 border-gray-600 shadow-lg transition hover:scale-110  hover:bg-white/10 rounded-full  flex flex-row items-center p-1 m-auto">  <TailwindIcon class=" size-6"/> <p class=" font-bold font-rocks">Tailwind</p> </li>
-    </ul>
+  <ul class="flex flex-row justify-between">
+    <li
+      class="inline-flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base"
+    >
+      <img
+        class="size-10"
+        src="/public/imagenes/revolver-logo.webp"
+        alt="Revolver Logo"
+      />
+      <p class="font-bold font-rocks opacity-65">Astro</p>
+    </li>
+    <li
+      class="inline-flex justify-center items-center gap-x-2 py-1 px-2 md:py-2 md:px-4 text-sm md:text-base"
+    >
+      <img
+        class="size-10"
+        src="/public/imagenes/revolver-logo.webp"
+        alt="Revolver Logo"
+      />
+
+      <p class="font-bold font-rocks opacity-65">Tailwind</p>
+    </li>
+  </ul>
 </div>

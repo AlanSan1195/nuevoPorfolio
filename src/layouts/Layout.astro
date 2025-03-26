@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Soy desarrollador web freelance y te ofrezco diseños a medida para tu página web, blog o landing page." />
@@ -32,7 +32,6 @@ const { title } = Astro.props;
     <meta content="Soy desarrollador web freelance y te ofrezco diseños a medida para tu página web, blog o landing page." name="twitter:description">
     <meta content="Alan Sandoval | AlanPr0o" name="twitter:image">
     <meta content="https://alansan.pro" name="twitter:url">
-    <meta name="generator" content={Astro.generator} />
   </head>
   <body>
     <slot />
@@ -40,15 +39,17 @@ const { title } = Astro.props;
 </html>
 <style is:global>
   :root {
-    --color-primary: #b4b7b1;
-    --color-secondary: #3b3c3c;
+    /* --color-primary: #b4b7b1; */
+    /* --color-secondary: #3b3c3c; */
+    --color-primary: #090909;
+    --color-secundary: white;
     
    
   }
 
   @font-face {
     font-family:"chinese_rocks_rg";
-    src: url(/public/fonts/chinese_rocks_rg.otf) format('opentype');
+    src: url(/public/fonts/chinese_rocks_rg.otf) ;
   }
 
 
@@ -61,13 +62,24 @@ const { title } = Astro.props;
     display: flex;
     justify-content: center;
     content: center;
+
     
   }
   
  @media(min-width: 768px){
   #main{
-    box-shadow: 0px 0px 90px -20px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 90px -20px rgba(76, 73, 73, 0.45);
+    border-right:  rgba(255, 255, 255, 0.28) 7px solid;
+    border-left:  rgba(255, 255, 255, 0.28) 7px solid ;
   }
+  
+ }
+ .speia-effect {
+  filter: sepia(60%) contrast(110%) brightness(60%);
+  
+ }
+ .speia-effect-perfile  {
+  filter: sepia(25%) contrast(110%) brightness(80%);
   
  }
 
