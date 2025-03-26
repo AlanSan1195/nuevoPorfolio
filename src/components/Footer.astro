@@ -3,17 +3,18 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer
-  class="flex w-full mx-auto py-1  border-white/50 mb-2 shadow-lg border-t-[2px] justify-center content-center items-center text-secundary opacity-65 "
+  class="flex w-full mx-auto py-1 border-white/50 mb-2 shadow-lg border-t-[2px] justify-center content-center items-center text-secundary opacity-65"
 >
   <div
     class="w-full mx-auto flex flex-col justify-center items-center md:flex-row md:items-center md:justify-between"
   >
-    <span class="text-md sm:text-center text-secondary m-2 font-old"
-      >© {currentYear}
-      <a href="https://midu.dev/" class="hover:underline">alansan</a>. Todos los
-      derechos reservados.
-    </span>
-    <ul class="flex justify-center text-xs font-rocks text-secundary m-2 opacity-95">
+    <h3 class="text-md sm:text-center text-secondary m-2 font-old">
+      <span>© {currentYear} </span>Alan San. Todos los derechos reservados
+    </h3>
+
+    <ul
+      class="flex justify-center text-xs font-rocks text-secundary m-2 opacity-95"
+    >
       <li class="flex justify-center content-center mx-4">
         <a
           href="https://www.instagram.com/alanpro._/"
@@ -41,7 +42,7 @@ const currentYear = new Date().getFullYear();
         <a
           href="https://github.com/AlanSan1195?tab=repositories"
           target="_blank"
-          class="hover:underline  flex flex-col items-center"
+          class="hover:underline flex flex-col items-center"
           ><svg
             {...Astro.props}
             viewBox="0 0 256 250"

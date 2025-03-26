@@ -17,20 +17,24 @@ import PROJECTS from "./Proyectos.astro";
   </div>
 
   <article
-    class="flex justify-between text-md leading-none opacity-70 text-pretty md:px-4"
+    class="flex justify-between text-md leading-none  text-pretty md:px-4"
   >
     <div
       class="flex w-[180px] md:w-[560px] lg:w-[540px] flex-col mt-2 md:mt-8 lg:mt-4 md:m-4"
     >
-      <p class="font-old md:text-2xl md:w-[480px]">
+      <p class="font-old md:text-2xl md:w-[480px] opacity-70">
         Hay rumores de que tiene contacto con una leyenda viviente, se trata de <a
-          href="midu.dev"
-          class="underline">@midudev</a
+          href="https://midu.dev"
+          class="underline"
+          target="_blank"
+          rel="noopener noreferrer"
+          
+          >@midudev</a
         >, y tras seguir algunas de sus pistas, parece ser que están intentando
         hacer una plataforma similar a la de Twitch.
       </p>
       <p
-        class="font-old w-[175px] md:w-[480px] lg:w-[480px] mt-1 leading-none md:text-2xl"
+        class="font-old w-[175px] md:w-[480px] lg:w-[480px] mt-1 leading-none md:text-2xl opacity-70"
       >
         Actualmente está superando esta prueba con lo que el mismo Midu le
         enseñó a Alan: React y Astro. Lo preocupante es que, mientras lo
@@ -40,7 +44,7 @@ import PROJECTS from "./Proyectos.astro";
       <div class="hidden md:block mt-6 w-max md:ml-36 lg:ml-28">
         <LinkButton href="https://github.com/AlanSan1195/matera-landing">
           <GitHubIcon class="size-3 md:size-5" />
-          <p class="opacity-65">Ver Proyecto</p>
+          <p class="opacity-65 hover:opacity-90">Ver Proyecto</p>
         </LinkButton>
       </div>
     </div>
