@@ -10,28 +10,40 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Soy desarrollador web freelance y te ofrezco diseños a medida para tu página web, blog o landing page." />
     <title>{title}</title>
     <meta name="viewport" content="width=device-width" />
-    <link  rel="icon" type="image/svg+xml" href="/imagenes/alanSan.webp" />
-    <link href="https://alansan.pro" rel="canonical">
-    <meta content="Alan Sandoval - https://alansan.pro" name="author">
-    <meta content="Alan Sandoval | AlanPr0o" property="og:title">
-    <meta content="Desarrollador web freelance, propuestas de diseños para tu pagina web, blogs o landing page." name="og:description">
-    <meta content="https://alansan.pro/imagenes/preview.webp" name="og:image">
-    <meta content="summary_large_image" name="og:card">
-    <meta content="https://alansan.pro" property="og:url">
-    <meta content="website" property="og:type">
+    <link rel="icon" type="image/svg+xml" href="/imagenes/alanSan.webp" />
+    <meta
+      name="description"
+      content="Desarrollador web freelance, Front end JavaScript, Guadalajara, Diseño web Ui"
+    />
+    <link href="https://alansan.pro" rel="canonical" />
+    <meta content="Alan Sandoval - https://alansan.pro" name="author" />
 
-    <meta content="summary_large_image" name="twitter:card">
-    <meta content="Alan Sandoval | AlanPr0o" name="twitter:title">
+    <meta content="https://alansan.pro" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="Alan Sandoval | AlanPr0o" property="og:title" />
+    <meta
+      content="Desarrollador web freelance, propuestas de diseños para tu pagina web, blogs o landing page."
+      property="og:description"
+    />
+    <meta
+      content="https://alansan.pro/imagenes/preview.webp"
+      property="og:image"
+    />
+    <!-- tags twitter  -->
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="twitter:domine" content="https://alansan.pro" />
 
-    <meta content="https://alansan.pro/imagenes/preview.webp" name="twitter:image">
-    <meta content="https://alansan.pro" name="twitter:url">
-    <meta content="Alan Sandoval | AlanPr0o" name="twitter:title">
-    <meta content="Soy desarrollador web freelance y te ofrezco diseños a medida para tu página web, blog o landing page." name="twitter:description">
-    <meta content="Alan Sandoval | AlanPr0o" name="twitter:image">
-    <meta content="https://alansan.pro" name="twitter:url">
+    <meta content="https://alansan.pro" name="twitter:url" />
+
+    <meta content="Alan Sandoval | AlanPr0o" name="twitter:title" />
+    <meta
+      content="Desarrollador web, Javascript Front End"
+      name="twitter:description"
+    />
+    <meta content="Alan Sandoval | AlanPr0o" name="twitter:image" />
+    <meta content="https://alansan.pro" name="twitter:url" />
   </head>
   <body>
     <slot />
@@ -43,49 +55,36 @@ const { title } = Astro.props;
     /* --color-secondary: #3b3c3c; */
     --color-primary: #090909;
     --color-secundary: white;
-    
-    
   }
   @font-face {
-    font-family:"chinese_rocks_rg";
-    src: url(/fonts/chinese_rocks_rg.otf) ;
+    font-family: "chinese_rocks_rg";
+    src: url(/fonts/chinese_rocks_rg.otf);
   }
 
-
-
   html {
-    
-   background-color: var(--color-primary); 
+    background-color: var(--color-primary);
 
     background-size: 50% 50%;
     color: var(--color-secondary);
     display: flex;
     justify-content: center;
     content: center;
-
-    
   }
-  
- @media(min-width: 768px){
-  #main{
-    box-shadow: 0px 0px 90px -20px rgba(76, 73, 73, 0.45);
-    border-right:  rgba(255, 255, 255, 0.28) 7px solid;
-    border-left:  rgba(255, 255, 255, 0.28) 7px solid ;
-  }
-  
- }
- .speia-effect {
-  filter: sepia(60%) contrast(110%) brightness(60%);
-  
- }
- .speia-effect-current {
-  filter: sepia(70%) contrast(110%) brightness(80%);
-  
- }
- .speia-effect-perfile  {
-  filter: sepia(25%) contrast(110%) brightness(80%);
-  
- }
 
- 
+  @media (min-width: 768px) {
+    #main {
+      box-shadow: 0px 0px 90px -20px rgba(76, 73, 73, 0.45);
+      border-right: rgba(255, 255, 255, 0.28) 7px solid;
+      border-left: rgba(255, 255, 255, 0.28) 7px solid;
+    }
+  }
+  .speia-effect {
+    filter: sepia(60%) contrast(110%) brightness(60%);
+  }
+  .speia-effect-current {
+    filter: sepia(70%) contrast(110%) brightness(80%);
+  }
+  .speia-effect-perfile {
+    filter: sepia(25%) contrast(110%) brightness(80%);
+  }
 </style>
