@@ -15,40 +15,42 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/imagenes/alanSan.webp" />
     <meta
       name="description"
-      content="Diseño web | Freelance. Frontend JavaScript.  "
+      content="Diseño web | Freelance. Frontend JavaScript. Desarrollador web especializado en React y Astro en Guadalajara."
     />
     <meta
       name="keywords"
-      content="Diseñador web, Frontend, Javascript, React, Atro, Frameworks, python,freelance en guadalajata, freelance, guadalajara, gdl, UI/UX, web, diseño, maquetación web."
+      content="Diseñador web, Frontend, Javascript, React, Astro, Frameworks, Python, freelance en guadalajara, freelance, guadalajara, gdl, UI/UX, web, diseño, maquetación web."
     />
     <link href="https://alansan.pro" rel="canonical" />
     <meta content="Alan Sandoval - https://alansan.pro" name="author" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#090909" />
 
+    <!-- Open Graph / Facebook -->
     <meta content="https://alansan.pro" property="og:url" />
     <meta content="website" property="og:type" />
     <meta content="Alan Sandoval | AlanPr0o" property="og:title" />
     <meta
-      content="Diseño web | Freelance. Frontend JavaScript. "
+      content="Diseño web | Freelance. Frontend JavaScript. Desarrollador web especializado en React y Astro en Guadalajara."
       property="og:description"
     />
     <meta
-      content="/imagenes/preview-share.webp"
+      content="https://alansan.pro/imagenes/preview-share.webp"
       property="og:image"
     />
-    <!-- tags twitter  -->
+    <meta property="og:site_name" content="Alan Sandoval Portfolio" />
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:domain" content="https://alansan.pro" />
+    <meta name="twitter:domain" content="alansan.pro" />
     <meta name="twitter:url" content="https://alansan.pro" />
     <meta name="twitter:title" content="Alan Sandoval | AlanPr0o" />
     <meta
       name="twitter:description"
-      content="Desarrollador web, Javascript Front End"
+      content="Desarrollador web, Javascript Front End especializado en React y Astro en Guadalajara"
     />
-    <meta content="https://alansan.pro/imagenes/preview-share.webp" name="twitter:image">
-    <meta
-      name="twitter:image"
-      content="/imagenes/preview-share.webp"
-    />
+    <meta name="twitter:image" content="https://alansan.pro/imagenes/preview-share.webp" />
+    <meta name="twitter:creator" content="@AlanPr0o" />
   </head>
   <body>
     <slot />
@@ -63,12 +65,12 @@ const { title } = Astro.props;
   }
   @font-face {
     font-family: "chinese_rocks_rg";
-    src: url(/fonts/chinese_rocks_rg.otf);
+    src: url(/fonts/chinese_rocks_rg.otf) format("opentype");
+    
   }
 
   html {
     background-color: var(--color-primary);
-
     background-size: 50% 50%;
     color: var(--color-secondary);
     display: flex;
