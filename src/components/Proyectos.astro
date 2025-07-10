@@ -82,12 +82,11 @@ const PROJECTS = [
     description:
       "Tras una visita al restaurante argentino La Matera, Alan se inspiró para rediseñar por completo la web del lugar. Este proyecto fue desarrollado con Astro y Tailwind, el objetivo fue crear una página que ayudara al cliente a saber más acerca de los alimentos del menú, con un diseño minimalista y muy visual. No cabe duda de que Astro es el framework favorito de Alan San; dicen que es como su revolver. ",
     image: "/proyects/matera.webp",
-    link: "", 
+    link: "",
     github: "",
-    tags:[TAGS.ASTRO, TAGS.TAILWIND],
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
     demo: "https://lamatera.online",
-
-  }
+  },
 ];
 ---
 
@@ -100,7 +99,7 @@ const PROJECTS = [
 </div>
 
 <div
-  class="flex flex-col gap-y-12  w-[350px] md:w-[800px] lg:w-[1000px] mt-4 md:mt-10 lg:mt-14 mx-auto"
+  class="flex flex-col gap-y-12 w-[350px] md:w-[800px] lg:w-[1000px] mt-4 md:mt-10 lg:mt-14 mx-auto"
 >
   {
     PROJECTS.map(({ image, title, description, tags, link, github, demo }) => (
